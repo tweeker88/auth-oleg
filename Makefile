@@ -1,7 +1,5 @@
 LOCAL_BIN:=$(CURDIR)/bin
 
-install-golangci-lint:
-
 lint:
 	GOBIN=$(LOCAL_BIN) golangci-lint run ./... --config .golangci.pipeline.yaml
 
